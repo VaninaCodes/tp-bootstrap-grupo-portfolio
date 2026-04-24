@@ -55,7 +55,7 @@ section{
 
 /* === Contenedor Principal === */
 body {
-    background: radial-gradient(circle, #2f3b5633, #F7F7FA);
+    background: radial-gradient(circle, #a88c7f9a, #F7F7FA);
 }
 
 h1{
@@ -136,6 +136,8 @@ ul{
     height: fit-content;
     padding: 20px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 /* Idiomas */
@@ -148,6 +150,7 @@ ul{
     padding: 10px;
     margin-top: 20px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    
 }
 #idiomas h2{
     padding: 10px;
@@ -166,6 +169,8 @@ ul{
     padding: 10px;
     margin-top: 20px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 /* Software / Tecnologias */
 #software {
@@ -186,8 +191,11 @@ ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.logo-sw {
+    width: 40px;
+}
 #software:hover {
-    background-color: #2f3b56f2;
+    background-color: #F7F7FA;
     color: #2f3b56f2;
     border-radius: 30px;
     width: auto;
@@ -195,6 +203,8 @@ ul{
     padding: 10px;
     margin-top: 20px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 /* Contacto */
@@ -220,4 +230,43 @@ ul{
 }
 #contacto a:hover{
     color: #1B263B;
+}
+#contacto:hover {
+    background-color: #7b61589a;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+/*desarrollo footer*/
+
+footer{
+    background-color: #2F3B56;
+}
+
+h3,h4{
+    color: var(--color-text-light);
+}
+
+
+.footer-text{
+    color: var(--color-text-light);
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-links li a{
+    color: #A88C7F;
+}
+
+.resaltar{
+    color: #7B6158;
 }
