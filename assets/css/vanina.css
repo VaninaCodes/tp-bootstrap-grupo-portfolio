@@ -55,7 +55,7 @@ section{
 
 /* === Contenedor Principal === */
 body {
-    background-color: #F7F7FA ;
+    background: radial-gradient(circle, #2f3b5633, #F7F7FA);
 }
 
 h1{
@@ -88,13 +88,17 @@ ul{
 
 /* === Introduccion ==== */
 #presentacion{
-    color: #2F3B56;
+    color: #0D1B2A;
     text-align: center;
     padding: 20px;
+}
+#presentacion h2{
+    font-weight: bolder;
 }
 /* Logo */
 #logo{
     width: 200px;
+    padding: 10px;
 }
 #bienvenida{
     background-color: #7B6158;
@@ -102,18 +106,20 @@ ul{
     padding: 20px;
     border: 6px solid #7B6158;
     border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
 
 /* === SOBRE MI === */
 /* Educacion */
 #educacion{
-    border: 10px solid #2f3b56e8;
+    background-color: #F7F7FA;
     border-radius: 30px;
     color: #2F3B56;
     width: auto;
     height: fit-content;
-    padding: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 #educacion h2{
     padding: 10px;
@@ -121,6 +127,15 @@ ul{
 }
 #educacion ul{
     text-align: left;
+}
+#educacion:hover{
+    background-color: #2F3B56;
+    border-radius: 30px;
+    color: #F7F7FA;
+    width: auto;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
 /* Idiomas */
@@ -131,17 +146,27 @@ ul{
     width: auto;
     height: fit-content;
     padding: 10px;
-    margin-top: 10px;
-}
-#lista{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 #idiomas h2{
     padding: 10px;
     font-weight:bolder;
 }
-
+#idiomas p{
+    text-align: left;
+    margin-left: 20px;
+}
+#idiomas:hover{
+    background-color: #F7F7FA;
+    color: #A88C7F;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
 /* Software / Tecnologias */
 #software {
     background-color: #2f3b56f2;
@@ -150,25 +175,49 @@ ul{
     width: auto;
     height: fit-content;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#software h2{
+    padding: 10px;
+    font-weight:bolder;
 }
 #sw{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-/* Contacto */
-#contacto {
-    background-color: #7B6158;
-    color: #F7F7FA;
+#software:hover {
+    background-color: #2f3b56f2;
+    color: #2f3b56f2;
     border-radius: 30px;
     width: auto;
     height: fit-content;
     padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Contacto */
+#contacto {
+    background-color: #F7F7FA;
+    color: #7B6158;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#contacto h2{
+    padding: 10px;
+    font-weight:bolder;
 }
 #contacto ul{
     text-align: left;
 }
 #contacto a{
-    color: #F7F7FA;
+    color: #7B6158;
+}
+#contacto a:hover{
+    color: #1B263B;
 }
