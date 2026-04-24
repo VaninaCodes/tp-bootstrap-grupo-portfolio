@@ -158,3 +158,10 @@ h1, .h2-hero{
 }
 
 
+/*section de abot-me*/
+.img-about {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
