@@ -1,0 +1,104 @@
+/* PALETA DE COLORES - PROYECTO DEV5 
+    Estilo: Minimalista, Tecnológico y Elegante
+*/
+
+:root {
+    /* Azul oscuro principal (Fondo base) */
+    --color-primary: #0D1B2A; 
+
+    /* Azul secundario (Tarjetas, contenedores, secciones) */
+    --color-secondary: #1B263B;
+
+    /* Azul grisáceo (Botones, bordes destacados, elementos de UI) */
+    --color-accent: #415A77;
+
+    /* Gris azulado claro (Textos secundarios, subtítulos, iconos) */
+    --color-text-muted: #778DA9;
+
+    /* Blanco suave (Textos principales, legibilidad alta) */
+    --color-text-light: #E0E1DD;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fefefe;
+    width: 100dvw;
+}
+
+section{
+    margin-bottom: 20px;
+}
+/*MODIFIQUE ELTAMAÑO DE LA IMAGEN */
+/*MODIFICACIONES EN EL NAV*/
+
+.navbar-brand{
+    max-width: 50px;
+}
+
+.container-fluid a img{
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 1px var(--color-accent));
+}
+
+/**/
+
+.nav-link{
+    margin: 0 6px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: all 0.3ms;
+    text-wrap: nowrap ;
+    color: var(--color-primary);
+}
+
+.nav-link:hover{
+    letter-spacing: 1px;
+    width: 1%;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+/*desarrollo hero section*/
+
+.hero-section{
+    background: url(/assets/img/img-gnrl/fondo-hero.png) no-repeat center;
+    background-size: cover;
+    min-height: 60dvh;
+}
+
+.container-titular{
+    padding: 2rem;
+}
+
+.container-titular h1{
+    color: var(--color-text-light);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container-titular p{
+    color: var(--color-text-light);
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+
+.container-img img{
+    width: 100%;
+}
+
+/*desarrollo de las cards*/
+
+.container-img{
+    
+}
+
+.card-img-top{
+    width: 100%;
+}
