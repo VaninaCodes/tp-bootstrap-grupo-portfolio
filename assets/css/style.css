@@ -25,9 +25,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     background-color: #fefefe;
-    width: 100dvw;
 }
 
 section{
@@ -95,10 +99,39 @@ section{
 
 /*desarrollo de las cards*/
 
-.container-img{
-    
+.team-section h2{
+    font-size: clamp(2rem,5dvw,3rem);
+    margin: 1.2rem;
+    color: var(--color-secondary);
 }
 
 .card-img-top{
-    width: 100%;
+    border-radius: 6px;
+}
+
+/*desarrollo footer*/
+
+footer{
+    background-color: var(--color-primary);
+}
+
+h3,a,h4{
+    color: var(--color-text-light);
+}
+
+
+.footer-text{
+    color: var(--color-text-light);
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-links li a{
+    color: #48e;
+}
+
+.resaltar{
+    color: #48e;
 }
