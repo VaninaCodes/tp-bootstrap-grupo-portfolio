@@ -10,39 +10,250 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/vanina.css" />
   </head>
   <body>
-    <!--Nav grupal-->
+    <!-- === Header === -->
+    <header data-bs-theme="light">
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ivan gomez</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vanina Resquin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Emmanuel Saucedo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sofia Alavarenga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bogado Daiana</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <!-- === Contenido principal === -->
     <main>
       <div id="contenedor-principal">
-        <h1>⊹ ࣪ ˖݁Porfolio de Vanina ✦</h1>
+        <div id="titulo">
+          <h1>⊹ ࣪ ˖݁ VANINA ✦</h1>
+        </div>
+
+        <!-- Seccion Presentacion-->
         <section id="intro">
-          <div id="presentacion">
-            <img
-              src="https://i.pinimg.com/736x/d1/a3/31/d1a331712d0717f19af1342a70e8bbe6.jpg"
-              alt="Logo de perfil"
-            />
-            <h2>Vanina Resquin</h2>
-            <p>Formosa, Argentina</p>
+          <!-- Bootstrap  Gutters-->
+          <div class="container px-4 text-center">
+            <div class="row gx-5">
+              <div class="col">
+                <div class="p-3">
+                  <!-- Columna 1 - presentacion + logo-->
+                  <div id="presentacion">
+                    <img
+                      id="logo"
+                      src="https://i.pinimg.com/736x/d1/a3/31/d1a331712d0717f19af1342a70e8bbe6.jpg"
+                      alt="Logo de perfil"
+                    />
+                    <h2>Vanina Resquin</h2>
+                    <p>Formosa, Argentina</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3">
+                  <!-- Columna 2 - Saludo de bienvenida + introduccion -->
+                  <div id="bienvenida">
+                    <h2>Holi!!</h2>
+                    <p>
+                      Mi nombre es Vanina y me gusta la programacion. <br />
+                      Comence en 2023 en la Carrera de Tenica en Programacion en
+                      la UTN(Reconquista, Santa Fe) y sigo recolectando más
+                      estudios en mi actual carrera de Tecnica en Desarrollo de
+                      Software Multiplataforma en la IPF (Formosa Capital).
+                      <br />
+                      Confio en mis skills y tengo confiaza de que podre
+                      contribuir positivamente al mundo dev. <br />
+                      Espero ser parte de un equipo de desarolladores en el
+                      futuro!!!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="bienvenida">
-            <h2>Holi!!</h2>
-            <p>
-              Mi nombre es Vanina y me gusta la programacion. <br />
-              Comence en 2023 en la Carrera de Tenica en Programacion en la
-              UTN(Reconquista, Santa Fe) y sigo recolectando más estudios en mi
-              actual carrera de Tecnica en Desarrollo de Software
-              Multiplataforma en la IPF (Formosa Capital). <br />
-              Confio en mis skills y tengo confiaza de que podre contribuir
-              positivamente al mundo dev. <br />
-              Espero ser parte de un equipo de desarolladores en el futuro!!!
-            </p>
+        </section>
+
+        <!-- Seccion sobre mi-->
+        <section id="sobremi">
+          <!-- Bootstrap - Grid: Variable width content -->
+          <div class="container text-center">
+            <div class="row justify-content-md-center">
+              <!-- Item 1 - Educacion -->
+              <div class="col-md-auto">
+                <div id="educacion">
+                  <h2>EDUCACIÓN</h2>
+                  <ul>
+                    <li>
+                      <strong
+                        >Instituto Politecnico de Formosa (2026 - Ahora)</strong
+                      >
+                      <p>Tecnico en Desarrollo de Software Multiplataforma</p>
+                    </li>
+                    <li>
+                      <strong
+                        >Universidad Tecnologica Nacional (2023 - 2025)</strong
+                      >
+                      <p>Tecnico Universitario en Programacion</p>
+                    </li>
+                    <li>
+                      <strong>E.P.E.S N°80 (2016 - 2021)</strong>
+                      <p>
+                        Titulo Secundario en Produccion de Bienes y Servicios
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 2 - Idiomas -->
+              <div class="col-md-auto">
+                <div id="idiomas">
+                  <h2>IDIOMAS</h2>
+                  <div id="lista">
+                    <p><strong>Ingles</strong> Intermedio</p>
+
+                    <p><strong>Coreano</strong> Principiante</p>
+
+                    <p><strong>Español</strong> Nativo</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 - Software / Tecnologias -->
+              <div class="col-md-auto">
+                <div id="software">
+                  <h2>SOFTWARE & TECNOLOGIAS</h2>
+                  <div id="sw">
+                    <figure>
+                      <img
+                        class="logo-sw"
+                        src="assets/img/python.jpg"
+                        alt="python"
+                      />
+                      <figcaption>Python</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="logo-sw"
+                        src="assets/img/html.jpg"
+                        alt="HTML"
+                      />
+                      <figcaption>HTML</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="logo-sw" src="assets/img/css.jpg" alt="CSS" />
+                      <figcaption>CSS</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="logo-sw" src="assets/img/c.jpg" alt="C#" />
+                      <figcaption>C#</figcaption>
+                    </figure>
+                    <figure>
+                      <img class="logo-sw" src="assets/img/c++.jpg" alt="C++" />
+                      <figcaption>C++</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="logo-sw"
+                        src="assets/img/mysql.jpg"
+                        alt="MySql"
+                      />
+                      <figcaption>MySql</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="logo-sw"
+                        src="assets/img/sqlite.jpg"
+                        alt="SqlLite"
+                      />
+                      <figcaption>SqlLite</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="logo-sw"
+                        src="assets/img/js.jpg"
+                        alt="JavaScript"
+                      />
+                      <figcaption>JS</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 - Hobbies -->
+              <div class="col-md-auto">
+                <div id="hobbies">
+                  <h2>HOBBIES</h2>
+                  <ul>
+                    <li>Programar</li>
+                    <br />
+                    <li>Crochet</li>
+                    <br />
+                    <li>Peliculas</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 5 - Contacto -->
+              <div class="col-md-auto">
+                <div id="contacto">
+                  <h2>CONTACTO</h2>
+                  <ul>
+                    <li>
+                      <strong>Github</strong>
+                      <p>
+                        <a href="https://github.com/vaninacodes">VaninaCodes</a>
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Email</strong>
+                      <p>vannilaresquin@gmail.com</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
     </main>
-    <!--Footer grupal-->
+
+    <!-- === Footer grupal === -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

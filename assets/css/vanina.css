@@ -1,0 +1,174 @@
+/* === Header - Nav === */
+:root {
+    /* Azul oscuro principal (Fondo base) */
+    --color-primary: #0D1B2A; 
+
+    /* Azul secundario (Tarjetas, contenedores, secciones) */
+    --color-secondary: #1B263B;
+
+    /* Azul grisáceo (Botones, bordes destacados, elementos de UI) */
+    --color-accent: #415A77;
+
+    /* Gris azulado claro (Textos secundarios, subtítulos, iconos) */
+    --color-text-muted: #778DA9;
+
+    /* Blanco suave (Textos principales, legibilidad alta) */
+    --color-text-light: #E0E1DD;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+/*body{
+    background-color: #fefefe;
+}*/
+section{
+    margin-bottom: 20px;
+}
+/*MODIFIQUE ELTAMAÑO DE LA IMAGEN */
+/*MODIFICACIONES EN EL NAV*/
+.navbar-brand{
+    max-width: 50px;
+}
+.container-fluid a img{
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 1px var(--color-accent));
+}
+.nav-link{
+    margin: 0 6px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: all 0.3ms;
+    text-wrap: nowrap ;
+    color: var(--color-primary);
+}
+.nav-link:hover{
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+/* === Contenedor Principal === */
+body {
+    background-color: #F7F7FA ;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    color: #F7F7FA;
+}
+
+/* Main */
+#contenedor-principal{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Titulo */
+#titulo{
+    background-color: #2F3B56;
+    width: auto;
+    padding: 1px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+}
+
+/* === Introduccion ==== */
+#presentacion{
+    color: #2F3B56;
+    text-align: center;
+    padding: 20px;
+}
+/* Logo */
+#logo{
+    width: 200px;
+}
+#bienvenida{
+    background-color: #7B6158;
+    color: #F7F7FA;
+    padding: 20px;
+    border: 6px solid #7B6158;
+    border-radius: 50px;
+}
+
+
+/* === SOBRE MI === */
+/* Educacion */
+#educacion{
+    border: 10px solid #2f3b56e8;
+    border-radius: 30px;
+    color: #2F3B56;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+#educacion h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+#educacion ul{
+    text-align: left;
+}
+
+/* Idiomas */
+#idiomas {
+    background-color: #A88C7F;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+}
+#lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#idiomas h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+
+/* Software / Tecnologias */
+#software {
+    background-color: #2f3b56f2;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+}
+#sw{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #7B6158;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+#contacto ul{
+    text-align: left;
+}
+#contacto a{
+    color: #F7F7FA;
+}
