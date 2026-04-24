@@ -62,7 +62,6 @@ section{
 
 .nav-link:hover{
     letter-spacing: 1px;
-    width: 1%;
     font-weight: 700;
     color: var(--color-accent);
 }
