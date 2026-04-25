@@ -1,0 +1,91 @@
+:root {
+    /* Azul oscuro principal (Fondo base) /
+    --color-primary: #0D1B2A; 
+
+    / Azul secundario (Tarjetas, contenedores, secciones) /
+    --color-secondary: #1B263B;
+
+    / Azul grisáceo (Botones, bordes destacados, elementos de UI) /
+    --color-accent: #415A77;
+
+    / Gris azulado claro (Textos secundarios, subtítulos, iconos) /
+    --color-text-muted: #778DA9;
+
+    / Blanco suave (Textos principales, legibilidad alta) */
+    --color-text-light: #E0E1DD;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #fefefe;
+}
+
+section{
+    margin-bottom: 20px;
+}
+*/MODIFIQUE ELTAMAÑO DE LA IMAGEN /
+*/MODIFICACIONES EN EL NAV*/
+
+.navbar-brand{
+    max-width: 50px;
+}
+
+.container-fluid a img{
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 1px var(--color-accent));
+}
+
+
+.nav-link{
+    margin: 0 6px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: all 0.3ms;
+    text-wrap: nowrap ;
+    color: var(--color-primary);
+}
+
+.nav-link:hover{
+    letter-spacing: 1px;
+    width: 1%;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.hero {
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+  text-align: center;
+  padding: 40px;
+
+}
+
+.caja {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-accent);
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.caja p {
+  color: var(--color-text-muted);
+}
+.contacto {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-accent);
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
