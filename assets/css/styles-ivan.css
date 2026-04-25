@@ -317,3 +317,10 @@ background: linear-gradient(
     padding: 12px;
     border-radius: 10px;
 }
+
+/*footer*/
+
+footer{
+    background-color: var(--color-border);
+    color: var(--color-text-primary);
+}
