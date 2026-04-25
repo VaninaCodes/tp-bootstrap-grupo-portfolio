@@ -159,9 +159,27 @@ h1, .h2-hero{
 
 
 /*section de abot-me*/
+.container-sections{
+background: linear-gradient(
+    135deg,
+    var(--color-bg-primary) 3%,
+    var(--color-accent-purple) 25%,
+    var(--color-bg-primary) 50%,
+    var(--color-accent-blue) 75%,
+    var(--color-bg-primary) 100%
+);
+}
+
+.about-me{
+    background-color: var(--color-bg-secondary);
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+}
+
 .about-me .card {
     background-color: var(--color-text-secondary) !important;
     min-height: 300px;
+    border: 1px solid var(--color-text-primary) !important;
 }
 
 .img-about {
@@ -176,6 +194,12 @@ h1, .h2-hero{
 }
 
 /*skill sectio*/
+
+.skills-section{
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg-secondary);
+    border-radius: 10px;
+}
 
 .cont-icon{
     background: var(--color-bg-primary);
@@ -207,9 +231,10 @@ h1, .h2-hero{
 
 .section-proyects {
     background-color: var(--color-bg-primary);
-    background-image: radial-gradient(circle, #1E293B 1.6px, transparent 1.6px);
+    background: radial-gradient(circle, #1E293B 1.6px, transparent 1.6px);
     background-size: 24px 24px;
     padding: 3rem 1.5rem;
+        border: 1px solid var(--color-border);
 }
 
 .section-proyects .card {
@@ -222,4 +247,73 @@ h1, .h2-hero{
 .card img{
     border-radius: 5px !important;
     width: 100%;
+}
+
+/*form section desarrollo*/
+
+.form-section{
+    min-height: 50dvh;
+}
+
+.container-form{
+    color: var(--color-text-primary);
+    background: linear-gradient(135deg, #0B1120, #050816);
+    border: 1px solid var(--color-accent-blue);
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 45%;
+}
+
+.cont-imput{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-imput input{
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.cont-imput textarea{
+    width: 100%;
+    overflow-y: auto;
+    min-height: 75px;
+    resize: none;
+}
+
+.cont-imput{
+    font-size: clamp(0.7rem, 5dvw, 1rem);
+}
+
+.cont-imput label{
+    color: var(--color-text-primary);
+    font-weight: 600;
+    font-size: clamp(1rem, 5dvw,1.3rem);
+}
+
+/*social contact block*/
+
+.form-section{
+    min-height: 60dvh;
+}
+
+.container-blocks{
+    max-width: 60%;
+}
+
+.bloque-social{
+    background: linear-gradient(135deg, #0B1120, #050816);
+    border: 1px solid var(--color-accent-pink);
+    min-height: 45dvh;
+    border-radius: 5px;
+}
+
+.bloque-titular h2{
+    color: var(--color-accent-blue);
+}
+
+.cont-icons i{
+    background-color: var(--color-bg-primary);
+    padding: 12px;
+    border-radius: 10px;
 }
