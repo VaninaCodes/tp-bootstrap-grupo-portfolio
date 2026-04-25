@@ -201,3 +201,25 @@ h1, .h2-hero{
     border-color: var(--color-accent-blue);
     cursor: pointer;
 }
+
+
+/*proyects sections*/
+
+.section-proyects {
+    background-color: var(--color-bg-primary);
+    background-image: radial-gradient(circle, #1E293B 1.6px, transparent 1.6px);
+    background-size: 24px 24px;
+    padding: 3rem 1.5rem;
+}
+
+.section-proyects .card {
+    background: linear-gradient(135deg, #0B1120, #050816);
+    border: 1px solid #1E293B;
+    color: var(--color-text-secondary);
+    max-width: 642px !important;
+}
+
+.card img{
+    border-radius: 5px !important;
+    width: 100%;
+}
