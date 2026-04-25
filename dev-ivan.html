@@ -11,6 +11,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>My-Portfolio_WEB</title>
   </head>
   <body>
@@ -144,50 +148,98 @@
           </div>
         </div>
       </section>
-      <section
-        class="about-me d-flex justify-content-center align-items-center"
-        id="about-me"
-      >
-        <div class="container-about">
-          <div class="card mb-3" style="max-width: 540px">
+      <div class="row justify-content-center align-items-center gap-4 p-5 px-3">
+
+        <!-- About Me -->
+        <section class="about-me col-12 col-md-6 p-2" id="about-me">
+          <div class="card border-0" >
             <div class="row g-0">
-              <div class="col-md-6">
+              <div class="col-4">
                 <img
                   src="/assets/img/img-ivan/foto-perfil.PNG"
-                  class="img-about"
+                  class="img-about rounded-start"
                   alt="foto perfil ivan"
                 />
               </div>
-
-              <div class="col-md-6">
-                <div class="card-body">
+              <div class="col-8">
+                <div class="card-body align-items-center">
                   <h5 class="card-title">Sobre mí</h5>
-
                   <p class="card-text">
                     Soy Iván Emmanuel Gómez, estudiante de Desarrollo de
                     Software en el IPF (Instituto Politécnico Formosa),
-                    actualmente formándome para convertirme en desarrollador
-                    Full Stack.
+                    formándome para ser desarrollador Full Stack.
                   </p>
-
-                  <p>
-                    Tengo conocimientos en
+                  <p class="card-text">
+                    Conocimientos en
                     <span class="text-danger">HTML</span>,
                     <span class="text-primary">CSS</span>,
                     <span class="text-warning">JavaScript</span>
-                    y desarrollo de lógica mediante algoritmos.
+                    y algoritmos.
                   </p>
-
-                  <p>
-                    Actualmente continúo aprendiendo SQL y Bootstrap,
-                    fortaleciendo mis conocimientos en frontend.
-                  </p>
+                  <p class="card-text">Actualmente continúo aprendiendo SQL y Bootstrap, fortaleciendo mis conocimientos en frontend mientras avanzo progresivamente hacia el desarrollo backend y una visión más completa del desarrollo de software.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-section col-12 col-md-5" id="skills">
+          <div class="container-skills p-3" style="background-color: var(--color-bg-secondary); border-radius: 8px;">
+            <h2 style="color: var(--color-text-primary);">SKILLS</h2>
+            <!-- lenguajes    -->
+            <div class="lenguages d-flex gap-3 flex-wrap mt-2 justify-content-center g-4 rounded border p-2">
+              <div class="cont-icon text-center">
+                <h6 style="color: var(--color-text-secondary);">JavaScript</h6>
+                <i class="bi bi-javascript" style="font-size: 2.5rem; color: #FFD60A;"></i>
+                <p style="color: var(--color-text-secondary);  ">Intermedio</p>
+              </div>
+
+              <div class="cont-icon text-center">
+                <h6 style="color: var(--color-text-secondary);">CSS3</h6>
+                  <i class="bi bi-css" style="font-size: 2.5rem; color: #1572B6;"></i>
+                  <p style="color: var(--color-text-secondary);  ">Intermedio</p>
+              </div>
+
+              <div class="cont-icon text-center">
+                <h6 style="color: var(--color-text-secondary);">HTML5</h6>
+                <i class="bi bi-filetype-html" style="font-size: 2.5rem; color: #F05032;"></i>
+                <p style="color: var(--color-text-secondary);  ">Intermedio</p>
+              </div>
+
+              <div class="cont-icon text-center">
+                <h6 style="color: var(--color-text-secondary);">Bootstrap</h6>
+                <i class="bi bi-bootstrap-fill" style="font-size: 2.5rem; color: #7952B3;"></i>
+                <p style="color: var(--color-text-secondary);  ">Basico</p>
+              </div>
+              <div class="cont-icon text-center">
+                <h6 style="color: var(--color-text-secondary);">SQL</h6>
+                <i class="bi bi-database" style="font-size: 2.5rem; color: #4479A1;"></i>
+                <p style="color: var(--color-text-secondary);  ">Basico</p>
+              </div>
+
+                <div class="cont-icon text-center">
+                  <h6 style="color: var(--color-text-secondary);">Git</h6>
+                  <i class="bi bi-git" style="font-size: 2.5rem; color: #F05032;"></i>
+                  <p style="color: var(--color-text-secondary);  ">Básico</p>
+                </div>
+
+                <div class="cont-icon text-center">
+                  <h6 style="color: var(--color-text-secondary);">VS Code</h6>
+                  <i class="bi bi-code-square" style="font-size: 2.5rem; color: #007ACC;"></i>
+                  <p style="color: var(--color-text-secondary);  ">Intermedio</p>
+                </div>
+
+                <div class="cont-icon text-center">
+                  <h6 style="color: var(--color-text-secondary);">GitHub</h6>
+                  <i class="bi bi-github" style="font-size: 2.5rem; color: #ffffff;"></i>
+                  <p style="color: var(--color-text-secondary);  ">Básico</p>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
