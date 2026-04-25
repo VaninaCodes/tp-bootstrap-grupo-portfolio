@@ -244,6 +244,46 @@ ul{
     transition: background-color 0.3s ease;
 }
 
+/* Hobbies */
+#hobbies {
+    background-color: #7B6158;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#hobbies h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+#hobbies ul{
+    text-align: left;
+}
+#hobbies:hover {
+    background-color: #F7F7FA;
+    color: #7B6158;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+
+/* === Acordeon === */
+#preguntas h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+
 /*desarrollo footer*/
 
 footer{
