@@ -35,7 +35,8 @@ section {
   margin-bottom: 20px;
 }
 /*MODIFIQUE ELTAMAÑO DE LA IMAGEN */
-/MODIFICACIONES EN EL NAV/ .navbar-brand {
+/* /MODIFICACIONES EN EL NAV/ */
+ .navbar-brand {
   max-width: 50px;
 }
 
