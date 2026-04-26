@@ -1,0 +1,312 @@
+/* === Header - Nav === */
+:root {
+    /* Azul oscuro principal (Fondo base) */
+    --color-primary: #0D1B2A; 
+
+    /* Azul secundario (Tarjetas, contenedores, secciones) */
+    --color-secondary: #1B263B;
+
+    /* Azul grisáceo (Botones, bordes destacados, elementos de UI) */
+    --color-accent: #415A77;
+
+    /* Gris azulado claro (Textos secundarios, subtítulos, iconos) */
+    --color-text-muted: #778DA9;
+
+    /* Blanco suave (Textos principales, legibilidad alta) */
+    --color-text-light: #E0E1DD;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+/*body{
+    background-color: #fefefe;
+}*/
+section{
+    margin-bottom: 20px;
+}
+/*MODIFIQUE ELTAMAÑO DE LA IMAGEN */
+/*MODIFICACIONES EN EL NAV*/
+.navbar-brand{
+    max-width: 50px;
+}
+.container-fluid a img{
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 1px var(--color-accent));
+}
+.nav-link{
+    margin: 0 6px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: all 0.3ms;
+    text-wrap: nowrap ;
+    color: var(--color-primary);
+}
+.nav-link:hover{
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+/* === Contenedor Principal === */
+body {
+    background: radial-gradient(circle, #a88c7f9a, #F7F7FA);
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    color: #F7F7FA;
+}
+
+/* Main */
+#contenedor-principal{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Titulo */
+#titulo{
+    background-color: #2F3B56;
+    width: auto;
+    padding: 1px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+}
+
+/* === Introduccion ==== */
+#presentacion{
+    color: #0D1B2A;
+    text-align: center;
+    padding: 20px;
+}
+#presentacion h2{
+    font-weight: bolder;
+}
+/* Logo */
+#logo{
+    width: 200px;
+    padding: 10px;
+}
+#bienvenida{
+    background-color: #7B6158;
+    color: #F7F7FA;
+    padding: 20px;
+    border: 6px solid #7B6158;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+
+/* === SOBRE MI === */
+/* Educacion */
+#educacion{
+    background-color: #F7F7FA;
+    border-radius: 30px;
+    color: #2F3B56;
+    width: auto;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#educacion h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+#educacion ul{
+    text-align: left;
+}
+#educacion:hover{
+    background-color: #2F3B56;
+    border-radius: 30px;
+    color: #F7F7FA;
+    width: auto;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+/* Idiomas */
+#idiomas {
+    background-color: #A88C7F;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    
+}
+#idiomas h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+#idiomas p{
+    text-align: left;
+    margin-left: 20px;
+}
+#idiomas:hover{
+    background-color: #F7F7FA;
+    color: #A88C7F;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+/* Software / Tecnologias */
+#software {
+    background-color: #2f3b56f2;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#software h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+#sw{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.logo-sw {
+    width: 40px;
+}
+#software:hover {
+    background-color: #F7F7FA;
+    color: #2f3b56f2;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #F7F7FA;
+    color: #7B6158;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#contacto h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+#contacto ul{
+    text-align: left;
+}
+#contacto a{
+    color: #7B6158;
+}
+#contacto a:hover{
+    color: #1B263B;
+}
+#contacto:hover {
+    background-color: #7b61589a;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+/* Hobbies */
+#hobbies {
+    background-color: #7B6158;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+#hobbies h2{
+    padding: 10px;
+    font-weight:bolder;
+}
+#hobbies ul{
+    text-align: left;
+}
+#hobbies:hover {
+    background-color: #F7F7FA;
+    color: #7B6158;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+
+/* === Acordeon === */
+#preguntas h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+
+/*desarrollo footer*/
+
+footer{
+    background-color: #2F3B56;
+}
+
+h3,h4{
+    color: var(--color-text-light);
+}
+
+
+.footer-text{
+    color: var(--color-text-light);
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-links li a{
+    color: #A88C7F;
+}
+
+.resaltar{
+    color: #7B6158;
+}
