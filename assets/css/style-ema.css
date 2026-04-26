@@ -1,0 +1,72 @@
+:root {
+  /* Azul oscuro principal (Fondo base) */
+  --color-primary: #0d1b2a;
+
+  /* Azul secundario (Tarjetas, contenedores, secciones) */
+  --color-secondary: #1b263b;
+
+  /* Azul grisáceo (Botones, bordes destacados, elementos de UI) */
+  --color-accent: #415a77;
+
+  /* Gris azulado claro (Textos secundarios, subtítulos, iconos) */
+  --color-text-muted: #778da9;
+
+  /* Blanco suave (Textos principales, legibilidad alta) */
+  --color-text-light: #e0e1dd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+section {
+  margin-bottom: 20px;
+}
+/*MODIFIQUE ELTAMAÑO DE LA IMAGEN */
+/* /MODIFICACIONES EN EL NAV/ */
+ .navbar-brand {
+  max-width: 50px;
+}
+
+.container-fluid a img {
+  max-width: 100%;
+  filter: drop-shadow(1px 1px 1px var(--color-accent));
+}
+
+/**/
+
+.nav-link {
+  margin: 0 6px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  transition: all 0.3ms;
+  text-wrap: nowrap;
+  color: var(--color-primary);
+}
+
+.nav-link:hover {
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.btn-instagram {
+  background-color: palevioletred !important;
+}
+
+.btn-instagram:hover {
+  opacity: 0.9;
+  color: #000000;
+}
